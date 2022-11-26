@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-base-starter"
+version = "0.1.0"
+description = ""
+authors = ["Kanisk Chakraborty <57884127+chakrakan@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "python_base_starter"}]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = "^22.10.0"
+flake8 = "^6.0.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
